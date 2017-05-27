@@ -1,4 +1,4 @@
-# skipIf `(condition, name, test)`
+# skipIf(condition, name, test)
 
 A small helper to make dynamic decisions on whether to skip tests. This might be useful
 in situations where a test is only applicable for certain environments.
