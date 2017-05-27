@@ -14,5 +14,7 @@ npm install --save-dev skip-if # or yarn add --dev skip-if
 ```js
 const skipIf = require('skip-if');
 
-skipIf(process.platform === 'darwin', 'test only for macOs', () => {})
+skipIf(process.platform === 'darwin', 'test only for macOs', () => {
+  expect(true).toBe(true)
+})
 ```
