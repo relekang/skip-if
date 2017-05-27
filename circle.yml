@@ -1,0 +1,14 @@
+machine:
+  node:
+    version: 7
+
+dependencies:
+  override:
+    - yarn
+    - npm install -g codecov
+test:
+  override:
+    - yarn run lint
+    - yarn test -- --coverage
+  post:
+    - codecov
