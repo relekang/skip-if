@@ -5,9 +5,8 @@ in situations where a test is only applicable for certain environments.
 
 ## Installation
 
-```
-npm install --save-dev skip-if
-yarn add --dev skip-if
+```shell
+npm install --save-dev skip-if # or yarn add --dev skip-if
 ```
 
 ## Usage
