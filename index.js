@@ -1,5 +1,5 @@
 function evaluateCondition(condition) {
-  return typeof condition === "function" ? condition() : !!condition
+  return typeof condition === 'function' ? condition() : !!condition
 }
 
 module.exports = function skipIf(condition, name, _test) {
@@ -10,4 +10,4 @@ module.exports = function skipIf(condition, name, _test) {
   }
 }
 
-module.exports.evaluateCondition = evaluateCondition;
+module.exports.evaluateCondition = evaluateCondition

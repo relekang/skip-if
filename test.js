@@ -1,15 +1,15 @@
-const skipIf = require('./index');
+const skipIf = require('./index')
 
 test('evaluateCondition should evaluate functions', () => {
-  expect(skipIf.evaluateCondition(() => true)).toBe(true);
-  expect(skipIf.evaluateCondition(() => false)).toBe(false);
+  expect(skipIf.evaluateCondition(() => true)).toBe(true)
+  expect(skipIf.evaluateCondition(() => false)).toBe(false)
 })
 
 test('evaluateCondition should evaluate literals', () => {
-  expect(skipIf.evaluateCondition(true)).toBe(true);
-  expect(skipIf.evaluateCondition(false)).toBe(false);
-  expect(skipIf.evaluateCondition(0)).toBe(false);
-  expect(skipIf.evaluateCondition('')).toBe(false);
+  expect(skipIf.evaluateCondition(true)).toBe(true)
+  expect(skipIf.evaluateCondition(false)).toBe(false)
+  expect(skipIf.evaluateCondition(0)).toBe(false)
+  expect(skipIf.evaluateCondition('')).toBe(false)
 })
 
 function brokenTest() {
