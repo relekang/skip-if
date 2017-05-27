@@ -1,6 +1,6 @@
 {
   "name": "skip-if",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "skipIf(condition, name, test) for skipping jest",
   "main": "index.js",
   "repository": "git@github.com:relekang/skip-if.git",
@@ -11,7 +11,6 @@
     "release": "standard-version -i changelog.md && git push --follow-tags && npm publish",
     "format": "prettier --write --print-width 100 --single-quote --no-semi index.js test.js",
     "lint": "prettier-check --print-width 100 --single-quote --no-semi index.js test.js"
-
   },
   "devDependencies": {
     "jest": "^20.0.4",
