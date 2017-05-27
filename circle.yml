@@ -4,8 +4,8 @@ machine:
 
 dependencies:
   override:
+    - npm install -g codecov yarn
     - yarn
-    - npm install -g codecov
 test:
   override:
     - yarn run lint
