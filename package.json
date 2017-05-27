@@ -1,9 +1,9 @@
 {
-  "name": "jest-skip-if",
+  "name": "skip-if",
   "version": "0.0.0",
-  "description": "skipIf(condition, name, test)",
+  "description": "skipIf(condition, name, test) for skipping jest",
   "main": "index.js",
-  "repository": "git@github.com:relekang/jest-skip-if.git",
+  "repository": "git@github.com:relekang/skip-if.git",
   "author": "Rolf Erik Lekang <me@rolflekang.com>",
   "license": "MIT",
   "scripts": {
