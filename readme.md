@@ -17,4 +17,10 @@ const skipIf = require('skip-if');
 skipIf(process.platform === 'darwin', 'test only for macOs', () => {
   expect(true).toBe(true)
 })
+
+// currying is also possible
+const skipIfMac = skipIf(process.platform === 'darwin')
+skipIfMac('test only for macOs', () => {
+  expect(true).toBe(true)
+})
 ```

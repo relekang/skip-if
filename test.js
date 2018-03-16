@@ -18,3 +18,10 @@ function brokenTest() {
 
 skipIf(true, 'skipIf should skip test based on true', brokenTest)
 skipIf(() => true, 'skipIf should skip test based on function that returns true', brokenTest)
+
+
+describe('currying', () => {
+  skipIf(false)('this should run', () => { })
+  skipIf(true)('this should not run', brokenTest)
+})
+
