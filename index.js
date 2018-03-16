@@ -5,7 +5,6 @@ function evaluateCondition(condition) {
 }
 
 module.exports = ac(function skipIf(condition, name, _test) {
-  console.log(condition, name, _test)
   if (evaluateCondition(condition)) {
     test.skip(name, _test)
   } else {
